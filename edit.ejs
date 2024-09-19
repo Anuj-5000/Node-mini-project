@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-full min-h-screen bg-zinc-900">
+        <span class="mx-10 mt-5 text-white text-[20px] inline-block">Edit your post</span>
+            <form class="mx-10 my-5 flex flex-col" action="/update/<%= post._id %>" method="post" >
+                    <textarea class="w-[25%] h-[28%] p-3 bg-transparent outline-none border-2 border-green-600 resize-none text-white" placeholder="What's on your mind?" name="content"></textarea>
+                    <input type="submit" class="w-[15%] px-3 py-2 mt-3 bg-yellow-600 text-black font-light rounded-[14px]" value="Update post"></input>
+            </form>
+             
+       </div>
+    </div>
+</body>
+</html>
